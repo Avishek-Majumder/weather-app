@@ -1,76 +1,96 @@
-🌤️ Streamlit Weather App
-Welcome to the Interactive Weather App – a sleek, real-time weather dashboard built with Streamlit, powered by OpenWeatherMap API. Whether you're planning your day or just curious about the weather in another city, this app gives you all the essential weather metrics you need — in a clean, interactive interface.
+# 🌤️ Streamlit Weather App
 
-🚀 Features
-🌡️ Live Temperature, Humidity, Wind Speed
+Welcome to the **Interactive Weather App** – a sleek, real-time weather dashboard built with [Streamlit](https://streamlit.io/), powered by [OpenWeatherMap API](https://openweathermap.org/api). Whether you're planning your day or just curious about the weather in another city, this app gives you all the essential weather metrics you need — in a clean, interactive interface.
 
-⛅ Weather Conditions with Icons
+---
 
-🧭 Wind Direction & Pressure Info
+## 🚀 Features
 
-🌅 Sunrise & Sunset Times
+- 🌡️ **Live Temperature, Humidity, Wind Speed**
+- ⛅ **Weather Conditions with Icons**
+- 🧭 **Wind Direction & Pressure Info**
+- 🌅 **Sunrise & Sunset Times**
+- 📈 **24-Hour Forecast (Temp & Wind Charts)**
+- 🌫️ **AQI Placeholder (Extendable for Real AQI)**
+- 💡 Designed with simplicity, built for clarity.
 
-📈 24-Hour Forecast (Temp & Wind Charts)
+---
 
-🌫️ AQI Placeholder (Extendable for Real AQI)
+## 🛠️ How to Run
 
-💡 Designed with simplicity, built for clarity.
+1. **Clone the Repository**
 
-🛠️ How to Run
-Clone the Repository
+   ```bash
+   git clone https://github.com/your-username/weather-streamlit-app.git
+   cd weather-streamlit-app
+   ```
 
-git clone https://github.com/your-username/weather-streamlit-app.git
-cd weather-streamlit-app
-Install Requirements
+2. **Install Requirements**
 
-Make sure you have Python 3.8+ installed.
+   Make sure you have Python 3.8+ installed.
 
-pip install -r requirements.txt
-Set Your API Key
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Replace the placeholder API key in the script (api_key = "YOUR_API_KEY_HERE") with your actual OpenWeatherMap API key.
+3. **Set Your API Key**
 
-Don’t have one? Sign up here – it’s free!
+   Replace the placeholder API key in the script (`api_key = "YOUR_API_KEY_HERE"`) with your actual OpenWeatherMap API key.
 
-Run the App
+   > Don’t have one? [Sign up here](https://openweathermap.org/api) – it’s free!
 
-streamlit run app.py
-🔍 Screenshots
-Insert screenshot of your app UI here for a better first impression!
+4. **Run the App**
 
-📦 Dependencies
-streamlit
+   ```bash
+   streamlit run app.py
+   ```
 
-requests
+---
 
-datetime (standard lib)
+## 🔍 Screenshots
 
-All listed in requirements.txt.
+> _Insert screenshot of your app UI here for a better first impression!_
 
-🧠 Behind the Scenes
+---
+
+## 📦 Dependencies
+
+- `streamlit`
+- `requests`
+- `datetime` (standard lib)
+
+All listed in `requirements.txt`.
+
+---
+
+## 🧠 Behind the Scenes
+
 This app fetches two things:
+- **Current weather data** from OpenWeatherMap’s `/weather` endpoint
+- **24-hour forecast** (next 6 time slots) from the `/forecast` endpoint
 
-Current weather data from OpenWeatherMap’s /weather endpoint
+Data is visualized using Streamlit's built-in components like `st.metric()`, `st.line_chart()`, and layout grids like `st.columns()`.
 
-24-hour forecast (next 6 time slots) from the /forecast endpoint
+---
 
-Data is visualized using Streamlit's built-in components like st.metric(), st.line_chart(), and layout grids like st.columns().
+## 🔄 Future Improvements
 
-🔄 Future Improvements
 Here are a few ideas for next versions:
+- 🧪 Real-time **AQI & UV Index** (using separate APIs)
+- 📍 GPS-based weather (with `geopy`)
+- 📆 5-day forecast toggle
+- 🌐 Language/Units switch (Celsius ↔️ Fahrenheit)
 
-🧪 Real-time AQI & UV Index (using separate APIs)
+---
 
-📍 GPS-based weather (with geopy)
+## 👨‍💻 Author
 
-📆 5-day forecast toggle
-
-🌐 Language/Units switch (Celsius ↔️ Fahrenheit)
-
-👨‍💻 Author
-Made with ❤️ by Avishek Majumder
+Made with ❤️ by **Avishek Majumder**  
 Feel free to fork, tweak, and build your own version!
 
-📄 License
-This project is open-source under the MIT License.
-Use it, learn from it, and don't forget to give credit where due!
+---
+
+## 📄 License
+
+This project is open-source under the MIT License.  
+_Use it, learn from it, and don't forget to give credit where due!_
